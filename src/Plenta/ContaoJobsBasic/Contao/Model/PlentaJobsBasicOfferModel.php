@@ -70,7 +70,7 @@ class PlentaJobsBasicOfferModel extends Model
             } else {
                 $sortDirection = 'ASC';
             }
-            $arrOptions = ['order' => 'title '. $sortDirection];
+            $arrOptions = ['order' => $sortBy . ' ' . $sortDirection];
         } else {
             $arrOptions = [];
         }
